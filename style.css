@@ -265,3 +265,87 @@ body {
 	}
 }
 
+.faq {
+	padding-top: 80px;
+}
+
+.faq__title {
+	font-size: 40px;
+	text-align: center;
+}
+
+.faq__slider {
+	padding: 0 15px;
+}
+
+.faq__slide {
+	width: 282px;
+	height: auto;
+	min-height: 160px;
+	margin-top: 32px;
+	margin-bottom: 40px;
+	padding: 16px;
+	padding-right: 10px;
+	border-radius: 16px;
+	box-shadow: 0 0 30px 0 var(--box-shadow);
+}
+
+.slide {
+	display: flex;
+	align-items: start;
+	justify-content: space-between;
+}
+
+.slide__title {
+	margin-bottom: 8px;
+	font-weight: 600;
+	font-size: 20px;
+}
+
+.slide__text {
+	font-weight: 400;
+	font-size: 15px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+	width: 44px;
+	height: 44px;
+	color: transparent;
+	background-color: var(--light);
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 100%;
+}
+
+.swiper-button-prev {
+	background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 12" height="12" width="7"><g xmlns="http://www.w3.org/2000/svg" transform="matrix(-1 0 0 -1 7 12)"><path d="M0.289998 0.709999C-0.100002 1.1 -0.100002 1.73 0.289998 2.12L4.17 6L0.289998 9.88C-0.100002 10.27 -0.100002 10.9 0.289998 11.29C0.679998 11.68 1.31 11.68 1.7 11.29L6.29 6.7C6.68 6.31 6.68 5.68 6.29 5.29L1.7 0.699999C1.32 0.319999 0.679998 0.319999 0.289998 0.709999Z" fill="%231A1A1A" /></g></svg>');
+}
+
+.swiper-button-next {
+	background-image: url('data:image/svg+xml,<svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.289998 0.709999C-0.100002 1.1 -0.100002 1.73 0.289998 2.12L4.17 6L0.289998 9.88C-0.100002 10.27 -0.100002 10.9 0.289998 11.29C0.679998 11.68 1.31 11.68 1.7 11.29L6.29 6.7C6.68 6.31 6.68 5.68 6.29 5.29L1.7 0.699999C1.32 0.319999 0.679998 0.319999 0.289998 0.709999Z" fill="%231A1A1A"/></svg>');
+}
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+	opacity: 0;
+}
+
+@media screen and (max-width: 1024px) {
+
+	.faq__title {
+		font-size: 48px;
+	}
+}
+@media screen and (max-width: 768px) {
+
+	.faq__title {
+		font-size: 32px;
+	}
+}
+@media screen and (max-width: 576px) {
+
+	.faq__title {
+		font-size: 24px;
+	}
+}
