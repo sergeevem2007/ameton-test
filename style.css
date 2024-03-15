@@ -43,8 +43,8 @@
 	--seconadry-lighter: #f9f9f9;
 	--accent: #36ba5f;
 	--blue: #93bbea;
-	--box-shadow: #1A1A1A0D;
-  ;
+	--box-shadow: #1a1a1a0d;
+
 }
 
 * {
@@ -294,6 +294,8 @@ body {
 	display: flex;
 	align-items: start;
 	justify-content: space-between;
+	color: var(--dark);
+	text-decoration: none;
 }
 
 .slide__title {
@@ -342,10 +344,87 @@ body {
 	.faq__title {
 		font-size: 32px;
 	}
+
+	.faq__slider {
+		padding: 0 8px;
+	}
 }
 @media screen and (max-width: 576px) {
 
 	.faq__title {
+		font-size: 24px;
+	}
+}
+
+.ref {
+	padding-top: 40px;
+	padding-bottom: 80px;
+}
+
+.ref__title {
+	margin-bottom: 32px;
+	font-size: 40px;
+	text-align: center;
+}
+
+.ref__links {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.ref__link {
+	position: relative;
+	padding: 20px 48px 20px 24px;
+	color: var(--dark);
+	text-decoration: none;
+	border-radius: 16px;
+	box-shadow: 0 0 30px 0 var(--box-shadow);
+}
+
+.ref__link::after {
+	position: absolute;
+	top: 50%;
+	right: 16px;
+	display: block;
+	transform: translateY(-50%);
+	content: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(%23clip0_4601_165)"><path d="M9.29 6.70999C8.9 7.09999 8.9 7.72999 9.29 8.11999L13.17 12L9.29 15.88C8.9 16.27 8.9 16.9 9.29 17.29C9.68 17.68 10.31 17.68 10.7 17.29L15.29 12.7C15.68 12.31 15.68 11.68 15.29 11.29L10.7 6.69999C10.32 6.31999 9.68 6.31999 9.29 6.70999Z" fill="%23949494"/></g><defs><clipPath id="clip0_4601_165"><rect width="24" height="24" fill="white"/></clipPath></defs></svg>');
+}
+
+.ref__link:hover {
+	color: var(--accent);
+	transition: color .2s ease;
+}
+
+.link__title {
+	max-width: 396px;
+	font-weight: 600;
+	font-size: 20px;
+}
+
+.link__description {
+	max-width: 396px;
+	margin-top: 4px;
+	color: var(--secondary);
+	font-weight: 400;
+	font-size: 13px;
+}
+
+@media screen and (max-width: 1024px) {
+
+	.ref__title {
+		font-size: 48px;
+	}
+}
+@media screen and (max-width: 768px) {
+
+	.ref__title {
+		font-size: 32px;
+	}
+}
+@media screen and (max-width: 576px) {
+
+	.ref__title {
 		font-size: 24px;
 	}
 }
