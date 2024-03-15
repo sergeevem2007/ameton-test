@@ -81,6 +81,7 @@ body {
 	justify-content: center;
 	min-width: 160px;
 	min-height: 48px;
+	padding: 8px 16px;
 	color: var(--dark);
 	text-decoration: none;
 	background-color: var(--light);
@@ -90,6 +91,22 @@ body {
 .button--hover-green:hover {
 	color: var(--accent);
 	transition: color .2s ease;
+}
+
+.button--hover-opacity:hover {
+	opacity: .7;
+	transition: opacity .2s ease;
+}
+
+.button--online {
+	min-width: 224px;
+	color: var(--light);
+	background-color: var(--accent);
+}
+
+.button--secondary {
+	min-width: initial;
+	background-color: var(--seconadry-lighter);
 }
 
 .support {
@@ -427,4 +444,44 @@ body {
 	.ref__title {
 		font-size: 24px;
 	}
+}
+
+.article {
+	padding: 22px 0 80px;
+}
+
+.article__wrapper {
+	max-width: 690px;
+}
+
+.article__title {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+	align-items: flex-end;
+	margin-bottom: 16px;
+}
+
+.article__title h1 {
+	font-weight: 900;
+	font-size: 24px;
+}
+
+.article__text {
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 1.4;
+}
+
+.article__connect {
+	margin: 40px 0 16px;
+	font-weight: 600;
+	font-size: 13px;
+}
+
+.article__links {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	align-items: center;
 }
